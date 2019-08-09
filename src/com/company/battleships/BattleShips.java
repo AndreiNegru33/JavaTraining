@@ -15,7 +15,7 @@ public class BattleShips {
 
     private static boolean welcome() {
 
-        System.out.println("Doresti sa incepeti jocul? (y/n)");
+        System.out.println("Doresti sa incepi jocul? (y/n)");
 
         Scanner s = new Scanner(System.in);
         String reply = s.next();
