@@ -3,6 +3,7 @@ package src.com.company.battleships;
 import java.util.Scanner;
 
 public class BattleShips {
+
     public static void main(String[] args) {
 
         System.out.println("Bine ai venit!");
@@ -13,7 +14,9 @@ public class BattleShips {
 
     }
 
-    private static boolean welcome() {
+    private static boolean welcome() {  // TODO ane: move the scanner to it's own package in this package called io (inputoutput)
+        // you should only have one scanner that reads all the yes no question and also the guesses, as there is no point in opening multiple console sessions
+        // the scanner should also accept a restart game command so that we don't have to run the app every time we want to restart the game, plus a exit command so that we can exit whenever we want
 
         System.out.println("Doresti sa incepi jocul? (y/n)");
 
@@ -30,7 +33,5 @@ public class BattleShips {
             return welcome();
 
         }
-
     }
-
 }
